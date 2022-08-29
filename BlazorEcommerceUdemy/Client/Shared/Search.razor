@@ -21,7 +21,7 @@
         <button class="btn btn-primary" @onclick="SearchProducts">
             <span class="oi oi-magnifying-glass"></span>
         </button>
-    </div>"
+    </div>
 </div>
 @code {
     private string searchText = string.Empty;
@@ -38,7 +38,7 @@
 
     public void SearchProducts()
     {
-        NavigationManager.NavigateTo($"search/{searchText}");
+        NavigationManager.NavigateTo($"search/{searchText}/1");
     }
 
     public async Task HandleSearch(KeyboardEventArgs args)
